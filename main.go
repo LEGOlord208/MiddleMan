@@ -48,10 +48,9 @@ func main(){
 	for{
 		c, err := l.Accept();
 		if(err != nil){
-			stdutil.PrintErr("Couldn't accept", err);
-
 			err1, ok := err.(*net.OpError);
 			if(ok && err1.Temporary()){
+				stdutil.PrintErr("Couldn't accept", err);
 				continue;
 			} else {
 				break;
