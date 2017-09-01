@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/legolord208/stdutil"
+	"github.com/jD91mZM2/stdutil"
 	"io"
 	"net"
 	"os"
